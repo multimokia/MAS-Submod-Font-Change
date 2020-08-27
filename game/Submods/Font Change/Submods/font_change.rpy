@@ -1,11 +1,24 @@
 init -990 python in mas_submod_utils:
-    Submod(
+    fc_submod = Submod(
         author="multimokia",
         name="Font Change",
         description="A submod that changes the font of dialogues into Monika's font.",
-        version="3.0.0"
+        version="3.0.1"
     )
 
+init -989 python in fc_utils:
+    import store
+
+    #Register the updater if needed
+    if store.mas_submod_utils.isSubmodInstalled("Submod Updater Plugin"):
+        store.sup_utils.SubmodUpdater(
+            submod=store.mas_submod_utils.fc_submod,
+            user_name="multimokia",
+            repository_name="MAS-Util-Font-Change",
+            tag_formatter=lambda x: x[x.index('_') + 1:],
+            update_dir="",
+            attachment_id=None,
+        )
 
 #START: Styledefs
 #Create these styles to be used later
