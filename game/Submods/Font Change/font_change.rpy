@@ -13,7 +13,7 @@ label multimokia_font_change_v3_0_1(version="v3_0_1"):
     return
 
 label multimokia_font_change_v3_0_2(version="v3_0_2"):
-    store.mas_utils.trydel(renpy.config.gamedir + "/Submods/Font Change/mod_assets")
+    $ store.mas_utils.trydel(renpy.config.gamedir + "/Submods/Font Change/mod_assets")
     return
 
 init -989 python in fc_utils:
