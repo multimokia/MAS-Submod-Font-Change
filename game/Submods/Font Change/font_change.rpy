@@ -3,7 +3,7 @@ init -990 python in mas_submod_utils:
         author="multimokia",
         name="Font Change",
         description="A submod that changes the font of dialogues into Monika's font.",
-        version="3.0.1"
+        version="3.0.2"
     )
 
 init -989 python in fc_utils:
