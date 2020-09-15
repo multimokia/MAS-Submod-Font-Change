@@ -3,8 +3,18 @@ init -990 python in mas_submod_utils:
         author="multimokia",
         name="Font Change",
         description="A submod that changes the font of dialogues into Monika's font.",
-        version="3.0.2"
+        version="3.0.2",
+        version_updates={
+            "multimokia_font_change_v3_0_1": "multimokia_font_change_v3_0_2"
+        }
     )
+
+label multimokia_font_change_v3_0_1(version="v3_0_1"):
+    return
+
+label multimokia_font_change_v3_0_2(version="v3_0_2"):
+    store.mas_utils.trydel(renpy.config.gamedir + "/Submods/Font Change/mod_assets")
+    return
 
 init -989 python in fc_utils:
     import store
