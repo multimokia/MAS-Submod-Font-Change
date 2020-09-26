@@ -24,7 +24,7 @@ init -989 python in fc_utils:
         store.sup_utils.SubmodUpdater(
             submod=store.mas_submod_utils.fc_submod,
             user_name="multimokia",
-            repository_name="MAS-Util-Font-Change",
+            repository_name="MAS-Submod-Font-Change",
             tag_formatter=lambda x: x[x.index('_') + 1:],
             update_dir="",
             attachment_id=None,
